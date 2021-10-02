@@ -2,14 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { HLawnComponent } from './h-lawn/h-lawn.component';
-import {MowingComponent} from "./mowing/mowing.component";
+import {WateringComponent} from "./watering/watering.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    HLawnComponent,
-    MowingComponent
+    WateringComponent
   ],
   imports: [
     BrowserModule
