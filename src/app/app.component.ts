@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sweng894';
+  title = 'Lawn Buddy';
+  isShowDivIf = false;
+  toggleDisplayDivIf () {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
 }
