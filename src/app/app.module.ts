@@ -30,7 +30,6 @@ import {MowingComponent} from "./mowing/mowing.component";
     MatButtonModule,
     MatCheckboxModule,
     MatChipsModule
-
   ],
   providers: [],
   bootstrap: [AppComponent]
