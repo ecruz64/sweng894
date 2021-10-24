@@ -1,1 +1,43 @@
-<p>mowing works!</p>
+<div class="container-fluid">
+  <div class="col-md-12">
+    <h2>Mowing</h2>
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+      <div class="text-center"> Value: {{ myForm.value | json }}</div>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <label for="lawnMower">Lawn Mower: </label>
+          </div>
+          <div class="col-sm-2">
+            <input id="lawnMower" type="text" formControlName="lawnMower">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-2">
+            <label for="minUsed">Minutes Used: </label>
+          </div>
+          <div class="col-sm-2">
+            <input id="minUsed" type="number" formControlName="minUsed">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-2">
+            <label for="lawnSize">Lawn Size (sqft): </label>
+          </div>
+          <div class="col-sm-2">
+            <input id="lawnSize" type="number" formControlName="lawnSize">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-2">
+            <button type="submit" [disabled]="!myForm.valid">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
