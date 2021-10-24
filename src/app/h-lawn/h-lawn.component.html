@@ -1,1 +1,43 @@
-<p>h-lawn works!</p>
+<div class="container-fluid">
+  <div class="col-md-12">
+    <h2>Healthy Lawn</h2>
+    <form [formGroup]="myHlawnForm" (ngSubmit)="onSubmit()">
+      <div class="text-center"> Value: {{ myHlawnForm.value | json }}</div>
+      <hr>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <label for="test1">Healthy Lawn test1: </label>
+          </div>
+          <div class="col-sm-2">
+            <input id="test1" type="text" formControlName="test1hLawnFC">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-2">
+            <label for="test2">Healthy Lawn test2: </label>
+          </div>
+          <div class="col-sm-2">
+            <input id="test2" type="text" formControlName="test2hLawnFC">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-2">
+            <label for="test3">Healthy Lawn test3: </label>
+          </div>
+          <div class="col-sm-2">
+            <input id="test3" type="text" formControlName="test3hLawnFC">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-2">
+            <button type="submit" [disabled]="!myHlawnForm">Submit</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
