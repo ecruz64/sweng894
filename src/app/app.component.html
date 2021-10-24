@@ -10,7 +10,7 @@
           <button type="button" class="btn btn-default">Watering</button>
         </div>
         <div class="btn-group" role="group">
-          <button type="button" class="btn btn-default" (click)="toggleDisplayDivIf()">Mowing</button>
+          <button type="button" class="btn btn-default">Mowing</button>
         </div>
       </div>
       <h2>What to Do</h2>
@@ -40,6 +40,10 @@
 <div *ngIf="isShowDivIf">
   <app-h-lawn></app-h-lawn>
 </div>
+<div *ngIf="isShowDivIf">
+  <app-watering></app-watering>
+</div>
+
 <footer id="footID">
   <p>Author: Ernesto Cruz</p>
   <p><a href="mailto:ecruz64@me.com">ecruz64@me.com</a></p>
