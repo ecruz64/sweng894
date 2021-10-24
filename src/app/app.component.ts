@@ -7,8 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Lawn Buddy';
-  isShowDivIf = false;
-  toggleDisplayDivIf () {
-    this.isShowDivIf = !this.isShowDivIf;
+  isShowHlawnIf = false;
+  isShowWaterIf = false;
+  isShowMowIf = false;
+  toggleDisplayHlawnIf () {
+    this.isShowHlawnIf = !this.isShowHlawnIf;
+  }
+  toggleDisplayMowIf () {
+    this.isShowMowIf = !this.isShowMowIf;
+  }
+  toggleDisplayWaterIf () {
+    this.isShowWaterIf = !this.isShowWaterIf;
   }
 }
