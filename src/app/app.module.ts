@@ -17,7 +17,6 @@ import {HLawnComponent} from "./h-lawn/h-lawn.component";
 import {MowingComponent} from "./mowing/mowing.component";
 
 import { OKTA_CONFIG, OktaAuthModule } from "@okta/okta-angular";
-import { ServiceServerComponent } from './service-server/service-server.component';
 
 const oktaConfig = {
   issuer: 'https://dev-1990201/oauth2/default',
@@ -32,8 +31,7 @@ const oktaConfig = {
     TimelineComponent,
     WateringComponent,
     HLawnComponent,
-    MowingComponent,
-    ServiceServerComponent
+    MowingComponent
   ],
   imports: [
     BrowserModule,
