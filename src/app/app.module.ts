@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import {WateringComponent} from "./watering/watering.component";
 import {HLawnComponent} from "./h-lawn/h-lawn.component";
 import {MowingComponent} from "./mowing/mowing.component";
+import { WeatherComponent } from './weather/weather.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     WateringComponent,
     HLawnComponent,
-    MowingComponent
+    MowingComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,
