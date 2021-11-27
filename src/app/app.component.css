@@ -1,3 +1,9 @@
+#mainDiv {
+  background-color: burlywood;
+}
+#testDiv  {
+  background-color: burlywood;
+}
 h1 {
   text-align: center;
   color: blue;
@@ -5,6 +11,13 @@ h1 {
 h2 {
   text-align: center;
   color: blue;
+}
+footer  {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: burlywood;
 }
 #footID {
   text-align: center;

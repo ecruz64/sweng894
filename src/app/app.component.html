@@ -1,8 +1,9 @@
-<div class="row">
+<div id="mainDiv"  class="row">
   <div class="container-fluid">
     <div class="col-md-12">
       <h1>Lawn Buddy</h1>
       <app-weather></app-weather>
+      <br><br>
       <div class="btn-group btn-group-justified" role="group" aria-label="...">
         <div class="btn-group" role="group">
           <button (click)="toggleDisplayHlawnIf()" class="btn btn-default" type="button">Healthy Lawn</button>
@@ -19,7 +20,7 @@
     </div>
   </div>
 </div>
-<div *ngIf="isShowMowIf">
+<div id="testDiv" *ngIf="isShowMowIf">
   <app-mowing></app-mowing>
 </div>
 <div *ngIf="isShowHlawnIf">
@@ -29,7 +30,11 @@
   <app-watering></app-watering>
 </div>
 
-<footer id="footID">
-  <p>Author: Ernesto Cruz</p>
-  <p><a href="mailto:ecruz64@me.com">ecruz64@me.com</a></p>
+<footer class="footClass">
+  <div id="footID">
+    <p>Author: Ernesto Cruz</p>
+    <p>Penn State University</p>
+    <p>SWENG 894 Capstone</p>
+    <p><a href="mailto:ecruz64@me.com">ecruz64@me.com</a></p>
+  </div>
 </footer>
