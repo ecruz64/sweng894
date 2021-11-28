@@ -1,23 +1,17 @@
-#mainDiv {
-  background-color: burlywood;
-}
-#testDiv  {
-  background-color: burlywood;
-}
-h1 {
+h1, h2,h3 {
   text-align: center;
-  color: blue;
+  color: #286090;
 }
-h2 {
-  text-align: center;
-  color: blue;
+p {
+  font-family: "Times New Roman";
+  color: #286090;
+  font-size: 18px;
 }
 footer  {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: burlywood;
 }
 #footID {
   text-align: center;

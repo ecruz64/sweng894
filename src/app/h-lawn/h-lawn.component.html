@@ -1,9 +1,8 @@
 <div class="container-fluid">
   <div class="col-md-12">
     <h2>Healthy Lawn</h2>
+    <br>
     <form [formGroup]="myHlawnForm" (ngSubmit)="onSubmit()">
-      <div class="text-center"> Value: {{ myHlawnForm.value | json }}</div>
-      <hr>
       <div class="container">
         <div class="row">
           <div class="col-sm-2">
@@ -35,6 +34,8 @@
         <div class="row">
           <div class="col-sm-2">
             <button type="submit" [disabled]="!myHlawnForm">Submit</button>
+            <br>
+            <div class="text-center"> Value: {{ myHlawnForm.value | json }}</div>
           </div>
         </div>
       </div>
