@@ -12,7 +12,10 @@ footer  {
   left: 0;
   bottom: 0;
   width: 100%;
+  text-align: center
 }
-#footID {
-  text-align: center;
+.footP  {
+  font-size: 25px;
+  color: aliceblue;
 }
+
